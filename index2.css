@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+}
+
+/* Navigatsiya */
+header {
+    width: 100%;
+}
+
+.navbar {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 255, 0.391);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: orangered;
+}
+
+/* Tugmalar */
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.btn-primary {
+    background-color: orangered;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Hero bo'limi */
+.hero-section {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.hero-title h1 {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.sub-title {
+    color: orangered;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Ajratuvchi chiziq */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 50px 0;
+}
+
+/* Kartalar va Gridlar */
+.features-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.features-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card-blue {
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.432);
+    border-radius: 10px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Demos bo'limi */
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h1 {
+    font-size: 28px;
+}
+
+.accent-text {
+    color: orangered;
+    margin: 10px 0;
+}
+
+.demos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.demo-card {
+    text-align: center;
+}
+
+.demo-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: blue;
+    padding: 30px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Footer CTA */
+.footer-cta {
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+.footer-cta h1 {
+    margin: 15px 0 25px 0;
+}
+
+/* Adaptive / Responsive Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero-title h1 {
+        font-size: 22px;
+    }
+
+    .hero-title br {
+        display: none; /* Kichik ekranda br larni bekor qiladi */
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+}
